@@ -3,7 +3,7 @@ class PaperBall {
     
      var options = {
         isStatic : false,
-        'restitution' : 0.8,
+        'restitution' : 0.4,
         'friction' : 4,
         'density' : 1.2,
     } 
