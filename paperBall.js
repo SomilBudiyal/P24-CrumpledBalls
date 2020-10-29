@@ -1,4 +1,4 @@
-class PaperBall {
+class PaperBall  {
     constructor(x, y, diameter){
     
      var options = {
@@ -11,6 +11,7 @@ class PaperBall {
    this.body = Bodies.circle(x,y,diameter,options);
    this.width = width;
    this.height = height;
+   this.image = loadImage("Pictures/paper.png");
    this.diameter = diameter;
 
    World.add(world, this.body);
@@ -19,6 +20,8 @@ class PaperBall {
    var pos =this.body.position;   
    fill("white");
    ellipseMode(RADIUS);
-   ellipse(pos.x,pos.y,this.diameter);  
+   ellipse(pos.x,pos.y,this.diameter); 
+   imageMode(CENTER); 
+   image(this.image, pos.x,pos.y,60,60);
   } 
 }
