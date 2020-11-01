@@ -16,6 +16,6 @@
     var pos =this.body.position;   
     fill("yellow");
     rect(pos.x, pos.y, this.width, this.height);  
-    image(this.image, 1050, 455);
+    image(this.image, 905, 320,290,320);
    } 
  }

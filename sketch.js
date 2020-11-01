@@ -14,13 +14,13 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
      
-	ball = new PaperBall(50,200,20,20)
+	ball = new PaperBall(90,200,70)
 
   ground = new Ground(700,650,1400,20)
 
   border1 = new Dustbin(1050,630,230,20);
-  border2 = new Dustbin(920,470,30,340);
-	border3 = new Dustbin(1180,470,30,340);
+  border2 = new Dustbin(930,470,10,300);
+	border3 = new Dustbin(1170,470,10,300);
 
 	Engine.run(engine);                        
 }
@@ -43,6 +43,6 @@ function draw() {
 
 function keyPressed() {
   if (keyCode === UP_ARROW) { 
-    Matter.Body.applyForce(ball.body,ball.body.position,{x:99,y:-99});
+    Matter.Body.applyForce(ball.body,ball.body.position,{x:135,y:-135});
   }
 }
